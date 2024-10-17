@@ -1,15 +1,13 @@
 source https://api.nuget.org/v3/index.json
-source https://nuget.pkg.github.com/dotnet-websharper/index.json
-source ../localnuget
 
 framework: netstandard2.0
 strategy: min
 storage: none
 
-nuget WebSharper prerelease
-nuget WebSharper.FSharp prerelease
-nuget WebSharper.Testing prerelease
-nuget WebSharper.UI prerelease
+nuget System.Net.Http > 4.3.2
+nuget System.Text.RegularExpressions >= 4.3.1
 
-group wsbuild
-    git https://github.com/dotnet-websharper/build-script websharper50
+nuget WebSharper < 7
+nuget WebSharper.FSharp < 7
+nuget WebSharper.Testing < 7
+nuget WebSharper.UI < 7
